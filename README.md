@@ -58,9 +58,13 @@ options:
 
 ### Parameter Description
 
-| Datasets | target_sum | resolution | target_sum | g_lr |
+| Datasets | target_sum | resolution | dropout_thr | g_lr |
 | :--- | :--- | :---: | :--- | :--- |
-| `Dataset1-4` | str | `None` | 数据集名称 (e.g., ZINB, PBMC) | 1|
-| `--num_epochs` | int | `100` | 训练轮数 | 1|
-| `--K_param` | int | `5` | 图构建中的邻居数量 (K-nearest neighbors) | 1|
-| `--lr` | float | `0.001` | 学习率 | 1|
+| Dataset1-4 | 1e3 | 0.3 | 0.9 | 2e-4|
+| Kolodziejczyk | 1e3 | 0.3 | 0.9 | 2e-2|
+| Klein | 1e4 | 0.5 | 0.9 | 2e-4|
+| Zeisel | 1e4 | 0.5 | 0.9 | 2e-4|
+| Type | 1e3 | 0.3 | 0.3 | 2e-3|
+| Time | 1e3 | 0.3 | 0.9 | 2e-3|
+| Baron | 1e4 | 0.1 | 0.3 | 2e-3|
+| Villani | 1e4 | 0.1 | 0.3 | 2e-3|
