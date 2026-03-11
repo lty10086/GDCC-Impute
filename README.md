@@ -14,13 +14,14 @@ pip install -r requirements.txt
 ```
 
 ### 2. Input data and format
-sc_dataset: ‘.csv’ format count scRNA-seq data, by cell, by gene.
+sc_dataset: .csv format count scRNA-seq data, organized by cell (rows) and by gene (columns).
 
 ### 3. Run Example
 ```bash
 python Impute.py --datasets ZINB --num_epochs 10 --K_param 5
+```
 
 For help on all available arguments:
 ```bash
 python Impute.py --help
-
+```
