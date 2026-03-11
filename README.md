@@ -11,6 +11,7 @@ GDCC (Graph-based Conditional GAN) is designed to address the dropout events in 
 Ensure you have Python 3.10 and install the required dependencies:
 ```bash
 pip install -r requirements.txt
+```
 
 ### 2. Input data and format
 sc_dataset: ‘.csv’ format count scRNA-seq data, by cell, by gene.
@@ -22,3 +23,4 @@ python Impute.py --datasets ZINB --num_epochs 10 --K_param 5
 For help on all available arguments:
 ```bash
 python Impute.py --help
+
