@@ -56,11 +56,11 @@ options:
                         Total training epochs. Recommended >= 600. Default: 600
 ```
 
-### 参数说明
+### Parameter Description
 
-| 参数名 | 类型 | 默认值 | 描述 |
-| :--- | :--- | :---: | :--- |
-| `--datasets` | str | `None` | 数据集名称 (e.g., ZINB, PBMC) |
-| `--num_epochs` | int | `100` | 训练轮数 |
-| `--K_param` | int | `5` | 图构建中的邻居数量 (K-nearest neighbors) |
-| `--lr` | float | `0.001` | 学习率 |
+| Datasets | target_sum | resolution | target_sum | g_lr |
+| :--- | :--- | :---: | :--- | :--- |
+| `Dataset1-4` | str | `None` | 数据集名称 (e.g., ZINB, PBMC) | 1|
+| `--num_epochs` | int | `100` | 训练轮数 | 1|
+| `--K_param` | int | `5` | 图构建中的邻居数量 (K-nearest neighbors) | 1|
+| `--lr` | float | `0.001` | 学习率 | 1|
