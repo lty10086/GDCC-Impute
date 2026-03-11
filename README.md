@@ -18,8 +18,12 @@ sc_dataset: .csv format count scRNA-seq data, organized by cell (rows) and by ge
 
 ### 3. Run Example
 ```bash
-python Impute.py --datasets ZINB --num_epochs 10 --K_param 5
+Run the Dataset1 with 50% dropout eg: python Impute.py --datasets Dataset1/50% --target_sum 1e3 --resolution 0.3 --resolution 0.9 --g_lr 2e-4
 ```
+```bash
+Run the Kolodziejczyk with 30% dropout eg: python Impute.py --datasets Kolodziejczyk --target_sum 1e3 --resolution 0.3 --resolution 0.9 --g_lr 2e-2
+```
+Note: The GSE75748 (Time) dataset is for trajectory analysis and does not involve manual dropout simulation. You can directly use the raw data as drop_data.csv.
 
 ### 4. Look for each parameter of GDCC via
 ```bash
