@@ -21,7 +21,37 @@ sc_dataset: .csv format count scRNA-seq data, organized by cell (rows) and by ge
 python Impute.py --datasets ZINB --num_epochs 10 --K_param 5
 ```
 
-For help on all available arguments:
+### 4. Look for each parameter of GDCC via
 ```bash
 python Impute.py --help
+```
+```bash
+options:
+  -h, --help            show this help message and exit
+  --datasets DATASETS [DATASETS ...]
+                        Datasets to process (default: ZINB NB Mixture)
+  --data_dir DATA_DIR   Directory containing dataset folders (default: ./dataset)
+  --output_dir OUTPUT_DIR
+                        Directory to save results (default: ./results)
+  --K_param K_PARAM     [Key Hyperparameter] Number of nearest neighbors (K) for adjacency matrix. Recommended: [1, 10]. Default: 5
+  --sub_clusters SUB_CLUSTERS
+                        [Key Hyperparameter] Number of sub-clusters (Ks) for hierarchical clustering. Recommended: [1, 5]. Default: 2
+  --seed SEED           Random seed (default: 100)
+  --target_sum TARGET_SUM
+                        Normalization target sum (default: 1000)
+  --resolution RESOLUTION
+                        Leiden resolution (default: 0.3)
+  --latent_dim LATENT_DIM
+                        Latent space dimension (default: 32)
+  --dropout_thr DROPOUT_THR
+                        Dropout identification threshold (default: 0.9)
+  --gp_weight GP_WEIGHT
+                        Gradient penalty weight (default: 1.0)
+  --g_lr G_LR           Generator learning rate. Tip: Use 2e-2 for high-expression datasets. Default: 2e-4
+  --g_epoch_ratio G_EPOCH_RATIO
+                        Generator training steps per Discriminator step (G/D ratio). Default: 3
+  --d_epoch_ratio D_EPOCH_RATIO
+                        Discriminator training steps. Default: 1
+  --num_epochs NUM_EPOCHS
+                        Total training epochs. Recommended >= 600. Default: 600
 ```
