@@ -29,7 +29,7 @@ python Impute.py --help
 options:
   -h, --help            show this help message and exit
   --datasets DATASETS [DATASETS ...]
-                        Datasets to process (default: ZINB NB Mixture)
+                        Datasets to process (default: Need Input)
   --data_dir DATA_DIR   Directory containing dataset folders (default: ./dataset)
   --output_dir OUTPUT_DIR
                         Directory to save results (default: ./results)
