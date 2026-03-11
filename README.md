@@ -55,3 +55,12 @@ options:
   --num_epochs NUM_EPOCHS
                         Total training epochs. Recommended >= 600. Default: 600
 ```
+
+### 参数说明
+
+| 参数名 | 类型 | 默认值 | 描述 |
+| :--- | :--- | :---: | :--- |
+| `--datasets` | str | `None` | 数据集名称 (e.g., ZINB, PBMC) |
+| `--num_epochs` | int | `100` | 训练轮数 |
+| `--K_param` | int | `5` | 图构建中的邻居数量 (K-nearest neighbors) |
+| `--lr` | float | `0.001` | 学习率 |
